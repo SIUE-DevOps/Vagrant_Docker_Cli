@@ -1,0 +1,5 @@
+1.) Fix nested vagrant file bug
+2.) Add variables
+3.) Add plugins:
+a.) vagrant-vbguest : $vagrant plugin install-vbguest
+b.) vagrant-guest_ansible : $vagrant-guest_ansible
