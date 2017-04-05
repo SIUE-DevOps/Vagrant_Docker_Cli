@@ -1,4 +1,4 @@
-$box_name   = "bento/ubuntu-16.04"
+$box_name   = "geerlingguy/ubuntu1604"
 $box_memory = 1024
 $box_vcpus  = 2
 

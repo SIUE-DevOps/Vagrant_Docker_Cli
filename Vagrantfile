@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   # The most common configuration options are documented and commented below.
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
-  
+
 
   config.vm.define vm_name = "DevOps" do |node|
     node.vm.box = $box_name
@@ -26,6 +26,7 @@ Vagrant.configure("2") do |config|
 
     node.vm.provider "virtualbox" do |vb|
         vb.name = "DevOps"
+        vb.gui = true
         vb.customize ["modifyvm", :id, "--memory", $box_memory]
         vb.customize ["modifyvm", :id, "--cpus", $box_vcpus]
       end #end vb
