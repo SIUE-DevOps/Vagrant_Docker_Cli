@@ -26,7 +26,6 @@ Vagrant.configure("2") do |config|
 
     node.vm.provider "virtualbox" do |vb|
         vb.name = "DevOps"
-        vb.gui = true
         vb.customize ["modifyvm", :id, "--memory", $box_memory]
         vb.customize ["modifyvm", :id, "--cpus", $box_vcpus]
       end #end vb
@@ -35,6 +34,7 @@ Vagrant.configure("2") do |config|
     if Vagrant::Util::Platform.windows?
   		config.vm.provision :guest_ansible do |ansible|
   		  ansible.sudo              = true
+        ansible.verbose           = "vvv"
         ansible.limit             = $ansible_limit
         ansible.playbook          = $ansible_playbook
         ansible.host_key_checking = false
@@ -42,6 +42,7 @@ Vagrant.configure("2") do |config|
     else
       config.vm.provision :ansible do |ansible|
         ansible.sudo              = true
+        ansible.verbose           = "vvv"
         ansible.limit             = $ansible_limit
         ansible.playbook          = $ansible_playbook
         ansible.host_key_checking = false

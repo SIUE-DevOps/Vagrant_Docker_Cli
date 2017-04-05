@@ -26,11 +26,14 @@
 - set_fact:
     ansible_python_interpreter: "/usr/bin/python"
 
-- name: update system tools and packages
-  apt: upgrade=full update_cache=yes
-
 - name: install git
   apt: name=git update_cache=yes state=present state=latest
 
 - name: install vim
   apt: name=vim update_cache=yes state=present state=latest
+
+#- name: install gnome desktop
+#  script: gnomeDesktop.sh
+
+- name: install docker
+  script: docker.sh
