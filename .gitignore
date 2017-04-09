@@ -1,0 +1,3 @@
+#Ignore .vagrant (local device specific files) and .DS_store (local Mac file structure)
+.vagrant
+.DS_Store
