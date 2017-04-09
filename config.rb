@@ -1,6 +1,6 @@
 $box_name   = "geerlingguy/ubuntu1604"
 $box_url2 = "https://devops.117.bz/boxes/ubuntu/server/virtualbox.box" #primary download url Temporarily swtiched
-$box_url1 = "https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1604-desktop/versions/2.0.26/providers/virtualbox.box" #secondary download url
+$box_url1 = "https://atlas.hashicorp.com/geerlingguy/boxes/ubuntu1604/versions/1.1.2/providers/virtualbox.box" #secondary download url
 $box_localdir = "" # local box location
 $box_hostname = "DevOps"
 $box_memory = 1024
