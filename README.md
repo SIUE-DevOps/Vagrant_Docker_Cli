@@ -1,18 +1,26 @@
 # Devops Toolkit
 Objective: Provide a basis to learn and explore concepts used in industry today. Familiarize students with virtual machines(VMs), command line interface(CLI), and Continuous Intigration/Continuous Development(CI/CD) pipelines.
-Installing Utilities
+
+# Installing Utilities
 Download VirtualBox. This application will hold the virtual machine that you create for your projects.
 https://www.virtualbox.org/wiki/Downloads 
+
 Choose the correct distribution for your set up.
-Download Vagrant. We will use this tool to automate the production and tear down of virtual machines.
+
+Download and install Vagrant. We will use this tool to automate the production and tear down of virtual machines.
 https://www.vagrantup.com/downloads.html 
 Choose the correct distribution for your set up.
-Creating the VM
+
+# Creating the VM
 Vagrant greatly simplifies this step. A vagrantfile will be provided to you, place it into a directory and open your command prompt there. On windows shift+right-click will give you the option.
+
 In the command prompt, enter "vagrant up" to initiate the start-up of your VM
  Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machineChoose the correct distribution for your set up.
-Using the VM
-Destroying the VM
+
+# Using the VM
+coming soon
+
+# Destroying the VM
 To remove the VM from your machine simply enter the command "vagrant destroy" into the command prompt on your host computer.
 
 
