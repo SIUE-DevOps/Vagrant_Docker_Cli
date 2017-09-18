@@ -31,27 +31,42 @@ Commands:
 
 # Virtualbox
 1.) mkdir temp
+
 2.) cd temp
+
 3.) sudo dnf update
+
 4.) sudo wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | rpm --import -
+
 5.) cd /etc/yum.repos.d/
+
 6.) sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+
 7.) sudo dnf update
+
 8.) sudo dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
+
 9.) sudo dnf install VirtualBox-5.1
+
 # Vagrant
 10.) sudo dnf install vagrant
-Ansible
+# Ansible
 11.) sudo dnf install python2
+
 12.) sudo dnf install ansible
-Git
+# Git
+
 13.) sudo dnf install git
 
 # Docker
 14.) sudo dnf -y install dnf-plugins-core
+
 15.) sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/fedora/docker-ce.repo
+
 16.) sudo dnf makecache fast
+
 17.) sudo dnf update
+
 18.) sudo dnf install docker-ce
 
 
@@ -59,10 +74,12 @@ Git
 # Github SSH key instructions.
 https://help.github.com/articles/connecting-to-github-with-ssh/ 
 
-Official Virtualbox installation instructions for various Linux distributions: https://www.virtualbox.org/wiki/Linux_Downloads 
-Official Vagrant download links for Debian, and CENTOS. 
+# Official Virtualbox installation instructions for various Linux distributions: https://www.virtualbox.org/wiki/Linux_Downloads 
+
+# Official Vagrant download links for Debian, and CENTOS. 
 https://www.vagrantup.com/downloads.html 
+
 Note: Debian packages may or may not work on Ubuntu. 
 
-Official Ansible Installation instructions for most Linux distributions. 
+# Official Ansible Installation instructions for most Linux distributions. 
 https://docs.ansible.com/ansible/latest/intro_installation.html 
