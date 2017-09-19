@@ -16,9 +16,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define vm_name = "DevOps" do |node|
     node.vm.box = $box_name
-    node.vm.box_url = [$box_url1, $box_url2] # can also use local files "file://somelocationtobox"
     node.vm.hostname = $box_hostname
-
     node.vm.provider "virtualbox" do |vb|
         vb.name = $box_hostname
         vb.customize ["modifyvm", :id, "--memory", $box_memory]
@@ -28,8 +26,8 @@ Vagrant.configure("2") do |config|
 
     if Vagrant::Util::Platform.windows?
   		config.vm.provision :guest_ansible do |ansible|
-  		ansible.sudo              = true #Can we remove this?
-        ansible.verbose           = "vvv" #What is this?
+  		ansible.sudo              = true
+        ansible.verbose           = "vvv" 
         ansible.limit             = $ansible_limit
         ansible.playbook          = $ansible_playbook
         ansible.host_key_checking = false
