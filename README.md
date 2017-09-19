@@ -38,44 +38,45 @@ Fedora 26
 Commands:
 
 # Virtualbox
-1.) mkdir temp
+1.) ``mkdir temp``
 
-2.) cd temp
+2.) ``cd temp``
 
-3.) sudo dnf update
+3.) ``sudo dnf update``
 
-4.) sudo wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | rpm --import -
+4.) ``sudo wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | rpm --import -``
 
-5.) cd /etc/yum.repos.d/
+5.) ``cd /etc/yum.repos.d/``
 
-6.) sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo
+6.) ``sudo wget http://download.virtualbox.org/virtualbox/rpm/fedora/virtualbox.repo``
 
-7.) sudo dnf update
+7.) ``sudo dnf update``
 
-8.) sudo dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms
+8.) ``sudo dnf install binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms``
 
-9.) sudo dnf install VirtualBox-5.1
+9.) ``sudo dnf install VirtualBox-5.1``
 
 # Vagrant
-10.) sudo dnf install vagrant
+10.) ``sudo dnf install vagrant``
+
 # Ansible
-11.) sudo dnf install python2
+11.) ``sudo dnf install python2``
 
-12.) sudo dnf install ansible
+12.) ``sudo dnf install ansible``
+
 # Git
+13.) ``sudo dnf install git``
 
-13.) sudo dnf install git
+# Docker (Optional)
+14.) ``sudo dnf -y install dnf-plugins-core``
 
-# Docker
-14.) sudo dnf -y install dnf-plugins-core
+15.) ``sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/fedora/docker-ce.repo``
 
-15.) sudo dnf config-manager \ --add-repo \ https://download.docker.com/linux/fedora/docker-ce.repo
+16.) ``sudo dnf makecache fast``
 
-16.) sudo dnf makecache fast
+17.) ``sudo dnf update``
 
-17.) sudo dnf update
-
-18.) sudo dnf install docker-ce
+18.) ``sudo dnf install docker-ce``
 
 
 
