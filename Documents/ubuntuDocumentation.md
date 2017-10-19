@@ -32,14 +32,6 @@ For Windows:
  * Select the DevOps Virtual Machine
  * Log in using 'vagrant' as the user and password
 
-### Create a Directory to hold the Project Files  
- * `mkdir testTravis`
-
-### Navigate into the Directory you just Created
- * `cd testTravis`
-
-### Initialize Git in this Directory
- * `git init`
 
 ### Clone the TestingProject_Go Repository to your Vagrantbox  
 Replace YOURGITHUBUSERNAMEHERE in the command below with your GitHub Account name. This will alone the clone command to pull the files from the forked repository that is now on your personal GitHub Account.  
@@ -69,7 +61,7 @@ How to use VIM can be found at: https://vim.rtorr.com/
  * `git commit -m "Commented out code to test TravisCI" `
 
 5. Push Changes to GitHub  
- * `sudo git push origin master`  
+ * `git push origin master`  
 
 It will ask for your GitHub credentials. Enter this information to proceed.
 
