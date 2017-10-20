@@ -1,3 +1,24 @@
+# Devops Toolkit
+Objective: Provide a basis to learn and explore concepts used in industry today. Familiarize students with virtual machines(VMs), command line interface(CLI), and Continuous Intigration/Continuous Development(CI/CD) pipelines.
+
+# Installing Utilities
+
+1. Download VirtualBox. This application will hold the virtual machine that you create for your projects.
+https://www.virtualbox.org/wiki/Downloads  Choose the correct distribution for your host OS.
+2. Download Vagrant. We will use this tool to automate the production and tear down of virtual machines.
+https://www.vagrantup.com/downloads.html  Choose the correct distribution for your host OS.
+3. Download Ansible. Ansible is used to provision your VM with the applications you would use.
+http://docs.ansible.com/ansible/latest/intro_installation.html
+			Click the link for your OS and follow instructions to install.
+			
+# Creating the VM
+
+1. Click the ‘clone or download’ button and copy the https address that pops up.
+2. Open power shell or terminal within the directory where you want to house the repo, this can be done using the command ‘ls’ to find a directory and the command ‘cd <directory name>’ to move to that directory
+3. Once here use the command ‘git clone’ and then paste the https address from the previous step.
+Once this is done enter the new directory and you can see that there are many files including a vagrantfile. This will be used to create your VM.
+4. In the command prompt, enter "vagrant up" to initiate the start-up of your VM. Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machine
+
 # Travis CI Example
 
 To demonstrate TravisCI functionality, we have created a GitHub repository with an example use of the TravisCI pipeline. Follow the guide below to setup the TravisCI example. You should have already created a GitHub account if you are following this Documentation (if not refer to information above).
