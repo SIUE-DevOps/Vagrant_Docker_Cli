@@ -14,10 +14,10 @@ http://docs.ansible.com/ansible/latest/intro_installation.html
 # Creating the VM
 
 1. Click the ‘clone or download’ button and copy the https address that pops up.
-2. Open power shell or terminal within the directory where you want to house the repo, this can be done using the command ‘ls’ to find a directory and the command ‘cd <directory name>’ to move to that directory
-3. Once here use the command ‘git clone’ and then paste the https address from the previous step.
+2. Open power shell or terminal within the directory where you want to house the repo, this can be done using the command `ls` to find a directory and the command `cd <directory name>` to move to that directory
+3. Once here use the command `git clone` and then paste the https address from the previous step.
 Once this is done enter the new directory and you can see that there are many files including a vagrantfile. This will be used to create your VM.
-4. In the command prompt, enter "vagrant up" to initiate the start-up of your VM. Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machine
+4. In the command prompt, enter `vagrant up` to initiate the start-up of your VM. Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machine
 
 # Travis CI Example
 
@@ -51,11 +51,11 @@ For Mac/Linux:
 For Windows:
  * Open Virtualbox
  * Select the DevOps Virtual Machine
- * Log in using 'vagrant' as the user and password
+ * Log in using `vagrant` as the user and password
 
 
 ### Clone the TestingProject_Go Repository to your Vagrantbox  
-Replace YOURGITHUBUSERNAMEHERE in the command below with your GitHub Account name. This will alone the clone command to pull the files from the forked repository that is now on your personal GitHub Account.  
+Replace YOURGITHUBUSERNAMEHERE in the command below with your GitHub Account name. This will allow the clone command to pull the files from the forked repository that is now on your personal GitHub Account.  
 
  * `git clone https://github.com/YOURGITHUBUSERNAMEHERE/TestingProject_Go.git`  
 
