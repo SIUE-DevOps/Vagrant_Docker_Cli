@@ -9,7 +9,9 @@ https://www.virtualbox.org/wiki/Downloads  Choose the correct distribution for
 https://www.vagrantup.com/downloads.html  Choose the correct distribution for your host OS.
 3. Download Ansible. Ansible is used to provision your VM with the applications you would use.
 http://docs.ansible.com/ansible/latest/intro_installation.html
-			Click the link for your OS and follow instructions to install.
+			Click the link for your OS and follow instructions to install.  
+
+* For Windows Users also install:
 			
 # Creating the VM
 
@@ -17,7 +19,9 @@ http://docs.ansible.com/ansible/latest/intro_installation.html
 2. Open power shell or terminal within the directory where you want to house the repo, this can be done using the command `ls` to find a directory and the command `cd <directory name>` to move to that directory
 3. Once here use the command `git clone` and then paste the https address from the previous step.
 Once this is done enter the new directory and you can see that there are many files including a vagrantfile. This will be used to create your VM.
-4. In the command prompt, enter `vagrant up` to initiate the start-up of your VM. Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machine
+
+4. If using Windows run the command `vagrant plugin install vagrant-guest_ansible`. If not using Windows, Skip this step.
+5. In the command prompt, enter `vagrant up` to initiate the start-up of your VM. Once the set-up is complete you can pull up virtual box and you will see there is a VM running on your machine
 
 # Travis CI Example
 
