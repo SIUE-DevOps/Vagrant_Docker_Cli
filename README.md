@@ -7,11 +7,11 @@ Objective: Provide a basis to learn and explore concepts used in industry today.
 https://www.virtualbox.org/wiki/Downloads  Choose the correct distribution for your host OS.
 2. Download Vagrant. We will use this tool to automate the production and tear down of virtual machines.
 https://www.vagrantup.com/downloads.html  Choose the correct distribution for your host OS.
+
+* For Mac and Linux (If on Windows, skip this step):
 3. Download Ansible. Ansible is used to provision your VM with the applications you would use.
 http://docs.ansible.com/ansible/latest/intro_installation.html
 			Click the link for your OS and follow instructions to install.  
-
-* For Windows Users also install:
 			
 # Creating the VM
 
