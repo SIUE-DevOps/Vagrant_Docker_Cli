@@ -1,4 +1,4 @@
-# Devops Toolkit
+# DevOps Toolkit
 Objective: Provide a basis to learn and explore concepts used in industry today. Familiarize students with virtual machines(VMs), command line interface(CLI), and Continuous Intigration/Continuous Development(CI/CD) pipelines.
 
 # Installing Utilities
@@ -8,7 +8,7 @@ https://www.virtualbox.org/wiki/Downloads  Choose the correct distribution for
 2. Download Vagrant. We will use this tool to automate the production and tear down of virtual machines.
 https://www.vagrantup.com/downloads.html  Choose the correct distribution for your host OS.
 
-* For Mac and Linux (If on Windows, skip this step):
+* For Mac and Linux:
 3. Download Ansible. Ansible is used to provision your VM with the applications you would use.
 http://docs.ansible.com/ansible/latest/intro_installation.html
 			Click the link for your OS and follow instructions to install.  
