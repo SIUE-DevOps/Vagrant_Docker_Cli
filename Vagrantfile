@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define vm_name = "DevOps" do |node|
     node.vm.box = $box_name
-    node.vm.box_url = [$box_url1, $box_url2] # can also use local files "file://somelocationtobox"
+    #node.vm.box_url = [file://somelocationtobox] # local install (optional)
     node.vm.hostname = $box_hostname
 
     node.vm.provider "virtualbox" do |vb|

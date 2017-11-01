@@ -1,22 +1,10 @@
-- name: bootstrap | check if bootstrap is needed
-  raw: which python
-  register: need_bootstrap
-  ignore_errors: True
-
-- name: bootstrap | install python 2.x
-  raw: DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install -y python-minimal aptitude
-  when: need_bootstrap | failed
-
-- set_fact:
-    ansible_python_interpreter: "/usr/bin/python"
-
 - name: install git
   apt: name=git update_cache=yes state=present state=latest
 
 - name: install vim
   apt: name=vim update_cache=yes state=present state=latest
   
-  # Docker install and setup is below.
+# Docker install and setup is below.
 
 - name: Install Apt and HTTP Certs
   apt:
@@ -42,8 +30,9 @@
     state: present
     update_cache: true
 
+# this throws a curl warning. 
 - name: Install Docker Compose
-  shell: curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+  shell: curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
 - name: Set Permissions on Docker Compose
   file:
@@ -55,6 +44,10 @@
     name: docker
     state: started
     enabled: false
+    
+- name: Add {{ user }} user to docker group
+  user: name={{ user }}
+    groups=docker
+    append=yes
   
-
 
