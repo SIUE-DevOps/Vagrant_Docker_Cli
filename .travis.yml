@@ -10,17 +10,13 @@ before_install:
 
 install:
   # Install Vagrant
-  - sudo apt-get install vagrant
+  - sudo dpkg --install - <(curl -o- https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb)
 
   # Install Ansible.
   - pip install ansible
 
 script:
-  # validate vagrantfile
+  # validate vagrantfile syntax
   - vagrant validate
-  # check syntax
+  # check playbook syntax
   - ansible-playbook docker_cli/docker.yml --syntax-check
-  # check before install
-  - ansible-playbook docker_cli/docker.yml --check
-  # install
-  - ansible-playbook docker_cli/docker.yml
