@@ -10,7 +10,9 @@ before_install:
 
 install:
   # Install Vagrant
-  - sudo dpkg --install - <(curl -o- https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb)
+  - wget https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb
+  - sudo dpkg -i vagrant_2.0.0_x86_64.deb
+  #- sudo dpkg --install - <(curl -o- https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb)
 
   # Install Ansible.
   - pip install ansible
