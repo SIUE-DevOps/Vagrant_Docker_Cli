@@ -1,2 +1,2 @@
 ## Deployment Options:
-bootstrap_os: ubuntu
+user: vagrant
