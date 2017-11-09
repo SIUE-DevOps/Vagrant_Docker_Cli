@@ -11,7 +11,8 @@ https://www.vagrantup.com/downloads.html  Choose the correct distribution for 
 * For Mac and Linux:
 3. Download Ansible. Ansible is used to provision your VM with the applications you would use.
 http://docs.ansible.com/ansible/latest/intro_installation.html
-			Click the link for your OS and follow instructions to install.  
+			Click the link for your OS and follow instructions to install. 
+			- For MacOS users: follow the steps under the "Latest Releases via Pip", for easy install.
 			
 # Creating the VM
 
