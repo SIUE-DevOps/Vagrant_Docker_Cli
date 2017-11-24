@@ -30,9 +30,3 @@ sudo dnf update -y
 # Install Ansible
 sudo dnf install ansible -y
 
-# Create and move to DEV folder
-mkdir vagrantDEV
-cd vagrantDEV
-
-# Clone project into DEV folder
-git clone https://github.com/SIUE-DevOps/Vagrant_Docker_Cli.git
