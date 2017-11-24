@@ -1,7 +1,7 @@
 ############################################################
 # Powershell script to install DevOps Vagrant Environment
 # Downloads and installs Wget, Virtualbox, Vagrant, and github desktop OR Git
-# Author: Joshua Haupt josh@hauptj.com Date: 7.11.2017
+# Author: Joshua Haupt josh@hauptj.com Date: 23.11.2017
 ############################################################
 
 ##### Open IE #####
@@ -28,10 +28,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 
 ##### Install Packages #####
 
-# Install Wget
-Write-Host "Installing Wget"
-cinst wget -y
-
 # Install Virtualbox
 Write-Host "Installing Virtualbox"
 cinst  virtualbox -y
@@ -40,20 +36,9 @@ cinst  virtualbox -y
 Write-Host "Installing Vagrant"
 cinst vagrant -y
 
-
-# Prompt user to install either github desktop or Git
-$option = Read-Host -Prompt 'Enter "github" for github desktop or "git" for git 64 bit"'
-If($option -eq 'github'){
-	Write-Host "Installing github desktop"
-	cinst github -y --ignore-checksums
-} ElseIf($option -eq 'git') {
-	Write-Host "Installing Git"
-	cinst git.install -y
-} Else {
-	Write-Host "Invalid input, defaulting to github desktop"
-	Write-Host "Installing github desktop"
-	cinst github -y --ignore-checksums
-}
+# Install Git
+Write-Host "Installing Git"
+cinst git.install -y
 
 ##### Configure Vagrant for Windows provisioning #####
 
